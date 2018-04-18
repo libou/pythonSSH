@@ -86,7 +86,7 @@ class SSHConnection:
       self.cmd('rm upload/'+file[num-1])
       print('删除成功')
     
-ssh=SSHConnection('123.206.95.20',22,'libou','AGE-1normal')
+ssh=SSHConnection('ip',22,'username','password')
 ssh.connect()
 while True:
   a=input("you wanna upload(u) or download(d) or delete or find?")
